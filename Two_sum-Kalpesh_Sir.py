@@ -19,6 +19,6 @@ def twoSum(nums,target):
             if nums[i] + nums[j] == target:
                 return [i,j]
 
-arr = [2,7,12,16]
-target = 9
+arr = [2,7,12,15]
+target = 19
 print(twoSum(arr,target))
