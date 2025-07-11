@@ -1,12 +1,17 @@
+def majorityElement(num):
+    n = len(num)
+    freq = 0
+    ans = 0
 
-def majorityElement(nums):
-    n = len(nums)
+    for i in num:
+        if freq == 0:
+            ans = i
+        
+        if i == ans:
+            freq += 1
+        else:
+            freq -= 1
 
-    for val in nums:
-        freq = 0
-        for el in nums:
-            if el == val:
-                freq += 1
-        return  val
-arr = [1,2,3,2,1,1,1,1,]
+    return ans  
+arr = [1,2,3,1,1,2,2,2,3]
 print(majorityElement(arr))
