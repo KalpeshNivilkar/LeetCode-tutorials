@@ -13,12 +13,37 @@
 
 
 
-def twoSum(nums,target):
-    for i in range (len(nums)):
-        for j in range(i + 1 ,len(nums)):
-            if nums[i] + nums[j] == target:
-                return [i,j]
+# def twoSum(nums,target):
+#     for i in range (len(nums)):
+#         for j in range(i + 1 ,len(nums)):
+#             if nums[i] + nums[j] == target:
+#                 return [i,j]
 
-arr = [2,7,12,16]
+# arr = [2,7,12,16]
+# target = 9
+# print(twoSum(arr,target))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def twoSum(num,target):
+    for i in range(len(num)):
+        for j in range(i+1 , len(num)):
+            if num[i] + num[j] == target:
+                return[i,j]
+arr = [1,2,4,5]
 target = 9
 print(twoSum(arr,target))
